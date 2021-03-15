@@ -1,0 +1,104 @@
+
+***program to display Greetings in three lines****
+
+public class Greeting{
+
+     public static void main(String []args){
+        System.out.println("Hello");
+        System.out.println("and");
+        System.out.println("Namaste");
+     }
+}
+
+
+***program to display your Introduction in three lines***
+public class Introduction{
+
+     public static void main(String []args){
+       String name = "Hello My Name is Chet Raj Bhandari.";
+       String stay = "I am in Houston right now. ";
+       String status = "I am graduating next Year. ";
+       System.out.println(name);
+       System.out.println(stay);
+       System.out.println(status);
+       
+     }
+}
+
+****program to find sum and average of two numbers
+ input by User (using Scanner class).*****
+
+import java.util.Scanner;
+public class SumAvg{
+
+     public static void main(String []args){
+      
+      int firstNum , secondNum;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the first Number :");
+      firstNum = sc.nextInt();
+      System.out.println("Enter the Second Number :");
+      secondNum = sc.nextInt();
+      int sum = firstNum + secondNum;
+      int avg = sum / 2 ;
+    
+      System.out.printf("The sum of Number is:"+ sum +"\n");
+      System.out.printf("The Average of Two Number is:"+ avg);
+       
+     }
+}
+
+****program to calculate Simple Interest input by the user. Simple Interest = P*T*R/100****
+
+import java.util.Scanner;
+public class SimpleInterest{
+
+     public static void main(String []args){
+      
+      int P , T, R;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the Principle :");
+      P = sc.nextInt();
+      System.out.println("Enter the Time :");
+      T = sc.nextInt();
+      System.out.println("Enter the Rate :");
+      R = sc.nextInt();
+      int simpleInterest = (P*T*R)/100 ;
+      
+      System.out.printf("The Simple Interest is:"+ simpleInterest);
+      
+       
+     }
+}
+
+****program to find the area of a circle, rectangle, and triangle.****
+
+import java.util.Scanner;
+public class Area{
+
+     public static void main(String []args){
+      
+      double pi = 3.14;
+      double r, l, b, h, w;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the radius of Circle:");
+      r = sc.nextDouble();
+      System.out.println("Enter the length of Rectangle :");
+      l = sc.nextDouble();
+      System.out.println("Enter the width of Rectangle :");
+      w = sc.nextDouble();
+      System.out.println("Enter the height of Triangle :");
+      h = sc.nextDouble();
+      System.out.println("Enter the base of Triangle :");
+      b = sc.nextDouble();
+      double Circle = pi* r*r;
+      double Rectangle = l * w;
+      double Triangle = 0.5 * b * h;
+      
+      System.out.printf("Area of Circle is:"+ Circle + "\n");
+      System.out.printf("Area of Rectangle is:"+ Rectangle + "\n");
+      System.out.printf("Area of Traingle is:"+ Triangle);
+      
+       
+     }
+}
